@@ -94,7 +94,7 @@ git clone https://github.com/hrnm2003/assembly-calculator.git
 Here is an example of how the calculator works in DOSBox:
 
 
-![Main Menu of Calculator](https://github.com/hrnm2003/demos/main-menu.jpg)
+![Main Menu of Calculator](https://github.com/hrnm2003/assembly-calculator/demos/main-menu.jpg)
 
 ---
 
