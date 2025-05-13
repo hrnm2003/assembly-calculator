@@ -91,7 +91,7 @@ git clone https://github.com/hrnm2003/assembly-calculator.git
 
 ## Screenshots
 
-Here is an example of how the calculator works in DOSBox:
+Here is an example of how the calculator works in emu8086:
 
 
 ![Main Menu of Calculator](https://raw.githubusercontent.com/hrnm2003/assembly-calculator/refs/heads/main/demos/main-menu.jpg)
