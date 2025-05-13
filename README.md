@@ -36,29 +36,27 @@ The main function clears the screen, displays the menu, and waits for user input
 - Executes division, displaying quotient and remainder separately.
 - Handles floating-point calculation if there is a non-zero remainder using the `floatdiv` routine.
 
-### Euler Exponentiation (`e^x`)
-This feature calculates \( e^x \) using a Taylor series approximation up to four terms:
+### Euler Exponentiation ($e^x$)
+This feature calculates $e^x$ using a Taylor series approximation up to four terms:
 
-\[
-e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!}
-\]
+$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!}$
 
 Each term calculation is handled separately, considering fixed-point arithmetic to maintain four decimal places precision:
 
-- **Stage 1:** Computes \(1 + x\)
-- **Stage 2:** Computes \(\frac{x^2}{2!}\) with fixed-point precision.
-- **Stage 3:** Computes \(\frac{x^3}{3!}\).
-- **Stage 4:** Computes \(\frac{x^4}{4!}\).
+- **Stage 1:** Computes $1 + x$
+- **Stage 2:** Computes $\frac{x^2}{2!}$ with fixed-point precision.
+- **Stage 3:** Computes $\frac{x^3}{3!}$.
+- **Stage 4:** Computes $\frac{x^4}{4!}$.
 
 The intermediate results are managed carefully on the stack and registers to maintain accuracy. Finally, the results are summed up and displayed.
 
 #### Example:
-For input `x = 5`:
-- Stage 1: \( 60000 \)
-- Stage 2: \(125000\)
-- Stage 3: \(208250\)
-- Stage 4: \(260000\)
-- Final result: \(653250\), representing \( e^5 \) approximation.
+For input $x = 5$:
+- Stage 1: 60000
+- Stage 2: 125000
+- Stage 3: 208250
+- Stage 4: 260000
+- Final result: 653250, representing $e^5$ approximation.
 
 *Note: Due to precision limitations, the displayed result might differ slightly from the actual mathematical calculation.*
 
@@ -95,7 +93,8 @@ git clone https://github.com/hrnm2003/assembly-calculator.git
 
 Here is an example of how the calculator works in DOSBox:
 
-![Main Menu of Calculator](Screenshot/main-menu.jpg)
+
+![Main Menu of Calculator](https://github.com/hrnm2003/demos/main-menu.jpg)
 
 ---
 
